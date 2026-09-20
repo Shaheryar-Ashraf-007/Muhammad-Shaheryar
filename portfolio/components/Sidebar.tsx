@@ -97,7 +97,7 @@ export default function Sidebar() {
       )}
 
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 z-40 hidden w-[340px] flex-col justify-between border-r border-ink/[0.08] bg-paper px-9 py-10 dark:border-paper/[0.1] dark:bg-ink lg:flex">
+      <aside className="fixed inset-y-0 z-40 hidden w-[340px] flex-col overflow-y-auto overflow-x-hidden hide-scrollbar border-r border-ink/[0.08] bg-paper px-9 py-10 dark:border-paper/[0.1] dark:bg-ink lg:flex">
         <div>
           <div className="mb-9 flex items-center justify-between">
             <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink/40 dark:text-paper/40">
@@ -114,16 +114,27 @@ export default function Sidebar() {
             )}
           </div>
 
-          <div className="mb-2 flex h-32 w-32 items-center justify-center rounded-2xl  border-[4px] border-teal-300">
-  <Image
-    src={profile.avatarUrl}
-    alt="Avatar"
-    width={132}
-    height={132}
-    className="rounded-xl"
-  />
-</div>
-
+           <div className="flex items-center justify-center py-8">
+            <div className="relative flex items-center justify-center">
+              
+              {/* Animated outer ring */}
+              <div className="absolute inset-[-10px] rounded-full border-[3px] border-transparent border-t-teal-400 border-r-cyan-400 animate-spin" />
+          
+              {/* Glow ring */}
+              <div className="absolute inset-[-6px] rounded-full border border-teal-400/30 shadow-[0_0_25px_rgba(45,212,191,0.35)]" />
+          
+              {/* Profile image */}
+              <div className="relative rounded-full p-[5px] bg-gradient-to-br from-teal-400 via-cyan-400 to-blue-500">
+                <Image
+                  src={profile.avatarUrl}
+                  alt={profile.name}
+                  width={240}
+                  height={240}
+                  className="rounded-full object-cover border-4 border-background"
+                />
+              </div>
+            </div>
+          </div>
           <h1 className="mt-5 font-display text-2xl font-semibold tracking-tight text-ink dark:text-paper">
             {profile.name}
           </h1>

@@ -7,9 +7,8 @@ import { Github, Linkedin } from "lucide-react";
 import {profile} from "./../data/content"
 
 const nav = [
-  { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
-  { href: "/components/Experience.tsx", label: "Experience" },
+  { href: "/experience", label: "Experience" },
   { href: "/contact", label: "Contact" },
 ];
 

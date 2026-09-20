@@ -28,21 +28,23 @@ export const status = {
 };
 
 export const stats = [
-  { label: "Years experience", value: "2+" },
+  { label: "Years experience", value: "2" },
   { label: "Internships", value: "2" },
   { label: "Freelance clients", value: "2" },
-  { label: "Technologies", value: "19" },
+  { label: "Technologies", value: "20" },
 ];
 
 export const about = {
   paragraphs: [
-    "I'm a software engineer based in Lahore, Pakistan, with two years of experience across internships and freelance client work. I like the full picture of a product — architecture, APIs, UI, deployment — and I've picked up most of what I know by shipping real things for real people rather than just following tutorials.",
-    "My background spans an 8-month technology internship at Bookme.pk, freelance projects for two small businesses, and my current role as a Software Development Intern at Zynvex Solutions. Outside of work, I solve algorithmic problems on LeetCode and keep a running log of side projects on GitHub.",
+    "I'm a Software Engineer based in Lahore, Pakistan, with hands-on experience building full-stack web applications through internships, freelance projects, and professional work. My core stack includes JavaScript, TypeScript, React, Next.js, Node.js, Express, MongoDB, and PostgreSQL, with additional experience in AWS, Docker, CI/CD, and modern DevOps practices. I enjoy understanding the complete product lifecycle — from designing interfaces and building APIs to deploying and maintaining applications.",
+    "My experience includes an 8-month technology internship at Bookme.pk, freelance development for small businesses, and my role as a Software Development Intern at Zynvex Solutions, where I worked on real-world applications involving AI integrations, SaaS platforms, authentication, databases, and third-party APIs. I am currently working as a Technical Support Executive at ibex Pakistan, where I continue to strengthen my troubleshooting, analytical, communication, and problem-solving skills while staying connected to the technology field.",
+    "Outside of professional work, I continuously improve my problem-solving and engineering skills through LeetCode, GitHub projects, and hands-on experimentation with new technologies. I particularly enjoy turning ideas into working products and exploring how software can be made more scalable, reliable, and maintainable. My goal is to continue growing as a full-stack engineer while developing deeper expertise in cloud, DevOps, and software architecture."
   ],
   highlights: [
     { label: "Experience", value: "2+ years" },
     { label: "Internships", value: "2" },
     { label: "Freelance clients", value: "2" },
+    { label: "Technologies", value: "20" },
   ],
 };
 
