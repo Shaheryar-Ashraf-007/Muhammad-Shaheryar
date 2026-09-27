@@ -1,8 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// EDIT ME: this file holds every piece of text on the site.
-// Replace anything in [brackets] with your real information.
-// ─────────────────────────────────────────────────────────────
-
 export const profile = {
   name: "Muhammad Shaheryar",
   roles: ["Software Engineer", "DevOps Engineer", "AI Full Stack Developer"],
@@ -10,7 +5,8 @@ export const profile = {
   avatarUrl: "/avatar.jpeg",
   email: "muhammadshaheryar45@gmail.com",
   phone: "[+92 318 756 4225]",
-  tagline: "I build fast, reliable web apps — from the database to the last pixel.",
+  tagline:
+    "I build fast, reliable web apps — from the database to the last pixel.",
   summary:
     "Software engineer with 2 years of hands-on experience building web applications. I've worked across internships and freelance projects, and I'm currently a Software Development Intern at Zynvex Solutions. I enjoy turning ambiguous problems into clean, working products — and I'm always looking for the next thing to build or break.",
   resumeUrl: "#",
@@ -38,7 +34,7 @@ export const about = {
   paragraphs: [
     "I'm a Software Engineer based in Lahore, Pakistan, with hands-on experience building full-stack web applications through internships, freelance projects, and professional work. My core stack includes JavaScript, TypeScript, React, Next.js, Node.js, Express, MongoDB, and PostgreSQL, with additional experience in AWS, Docker, CI/CD, and modern DevOps practices. I enjoy understanding the complete product lifecycle — from designing interfaces and building APIs to deploying and maintaining applications.",
     "My experience includes an 8-month technology internship at Bookme.pk, freelance development for small businesses, and my role as a Software Development Intern at Zynvex Solutions, where I worked on real-world applications involving AI integrations, SaaS platforms, authentication, databases, and third-party APIs. I am currently working as a Technical Support Executive at ibex Pakistan, where I continue to strengthen my troubleshooting, analytical, communication, and problem-solving skills while staying connected to the technology field.",
-    "Outside of professional work, I continuously improve my problem-solving and engineering skills through LeetCode, GitHub projects, and hands-on experimentation with new technologies. I particularly enjoy turning ideas into working products and exploring how software can be made more scalable, reliable, and maintainable. My goal is to continue growing as a full-stack engineer while developing deeper expertise in cloud, DevOps, and software architecture."
+    "Outside of professional work, I continuously improve my problem-solving and engineering skills through LeetCode, GitHub projects, and hands-on experimentation with new technologies. I particularly enjoy turning ideas into working products and exploring how software can be made more scalable, reliable, and maintainable. My goal is to continue growing as a full-stack engineer while developing deeper expertise in cloud, DevOps, and software architecture.",
   ],
   highlights: [
     { label: "Experience", value: "2+ years" },
@@ -53,26 +49,65 @@ export const skills = [
     group: "Languages",
     icon: "code",
     blurb: "Core languages I write day to day.",
-    items: ["JavaScript", "TypeScript", "Python", "C++", "SQL"],
+    items: ["JavaScript", "TypeScript", "Python", "SQL"],
   },
   {
     group: "Frontend",
     icon: "layout",
     blurb: "Building interfaces that feel fast and intentional.",
-    items: ["React", "Next.js", "Tailwind CSS", "Redux", "HTML5 / CSS3"],
+    items: ["React.js", "Next.js", "Tailwind CSS", "Redux", "Material UI", "ShadCN UI","HTML5 / CSS3"],
   },
   {
     group: "Backend",
     icon: "server",
     blurb: "APIs and data layers that hold up under real use.",
-    items: ["Node.js", "Express", "REST APIs", "MongoDB", "PostgreSQL"],
+    items: ["Node.js", "Express", "REST APIs", "MongoDB", "PostgreSQL", "SQL"],
+  },
+   {
+    group: "DevOps & Cloud",
+    icon: "devops",
+    blurb: "Automating deployments, infrastructure, and development workflows.",
+    items: [
+      "Git & GitHub",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Linux",
+      "Terraform",
+      "Helm",
+      "Postman",
+      "CI/CD Pipelines",
+    ],
+  },
+  {
+    group: "AI Tools & Framework",
+    icon: "devops",
+    blurb: "  AI technologies I use to build intelligent and generative applications.",
+    items: [
+      "Gemini API",
+      "OpenAI API",
+      "Replicate",
+      "Flux Schnell",
+      "Generative AI",
+      "Prompt Engineering",
+      "AI Integration",
+    ],
   },
   {
     group: "Tools & Platforms",
-    icon: "terminal",
-    blurb: "The workflow and infra I rely on to ship.",
-    items: ["Git & GitHub", "Docker", "Postman", "Vercel", "Linux"],
+    icon: "tools",
+    blurb: "The tools and platforms I rely on to build, collaborate, and ship.",
+    items: [
+      "VS Code",
+      "GitHub",
+      "Hostinger",
+      "Vercel",
+      "Netlify",
+      "Namecheap",
+      "Slack",
+    ],
   },
+  
 ];
 
 export const experience = [
@@ -120,7 +155,7 @@ export const experience = [
 
 export const projects = [
   {
-    name: "[Project One]",
+    name: "AI Powered Cloud-based CI/CD pipeline on SAAS-based LMS",
     description:
       "[One or two sentences on what this project does and the problem it solves.]",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],

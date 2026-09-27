@@ -1,6 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { projects } from "@/data/content";
-import { SectionHeading } from "./About";
+import { SectionHeading } from "./page";
 
 export default function Projects() {
   return (

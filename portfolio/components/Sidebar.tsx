@@ -1,16 +1,7 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import {
-  
-  Moon,
-  Sun,
-  Menu,
-  X,
-  MapPin,
-  Download,
-} from "lucide-react";
+import { Moon, Sun, Menu, X, MapPin, Download } from "lucide-react";
 import { profile, status, nav } from "@/data/content";
 import RoleRotator from "./RoleRotator";
 import Image from "next/image";
@@ -36,7 +27,7 @@ export default function Sidebar() {
           }
         });
       },
-      { rootMargin: "-40% 0px -50% 0px", threshold: 0 }
+      { rootMargin: "-40% 0px -50% 0px", threshold: 0 },
     );
 
     sections.forEach((s) => observer.observe(s));
@@ -55,7 +46,10 @@ export default function Sidebar() {
     <>
       {/* Mobile top bar */}
       <header className=" flex items-center justify-between border-b border-ink/[0.08] bg-paper/90 px-5 py-4 backdrop-blur-md dark:border-paper/[0.1] dark:bg-ink/90 lg:hidden ">
-        <a href="#top" className="font-display text-sm font-semibold text-ink dark:text-paper">
+        <a
+          href="#top"
+          className="font-display text-sm font-semibold text-ink dark:text-paper"
+        >
           {initials || "JD"}
           <span className="text-teal-500 dark:text-teal-300">.</span>
         </a>
@@ -114,15 +108,14 @@ export default function Sidebar() {
             )}
           </div>
 
-           <div className="flex items-center justify-center py-8">
+          <div className="flex items-center justify-center py-8">
             <div className="relative flex items-center justify-center">
-              
               {/* Animated outer ring */}
               <div className="absolute inset-[-10px] rounded-full border-[3px] border-transparent border-t-teal-400 border-r-cyan-400 animate-spin" />
-          
+
               {/* Glow ring */}
               <div className="absolute inset-[-6px] rounded-full border border-teal-400/30 shadow-[0_0_25px_rgba(45,212,191,0.35)]" />
-          
+
               {/* Profile image */}
               <div className="relative rounded-full p-[5px] bg-gradient-to-br from-teal-400 via-cyan-400 to-blue-500">
                 <Image
@@ -162,11 +155,15 @@ export default function Sidebar() {
             </div>
             <div className="flex items-center justify-between">
               <span className="text-ink/45 dark:text-paper/45">tz</span>
-              <span className="text-ink/80 dark:text-paper/80">{status.timezone}</span>
+              <span className="text-ink/80 dark:text-paper/80">
+                {status.timezone}
+              </span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-ink/45 dark:text-paper/45">response</span>
-              <span className="text-ink/80 dark:text-paper/80">{status.responseTime}</span>
+              <span className="text-ink/80 dark:text-paper/80">
+                {status.responseTime}
+              </span>
             </div>
           </div>
 
@@ -185,9 +182,6 @@ export default function Sidebar() {
               {profile.email}
             </a>
           </div>
-
-          
-
         </div>
       </aside>
     </>

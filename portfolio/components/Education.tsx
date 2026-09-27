@@ -1,5 +1,5 @@
 import { education } from "@/data/content";
-import { SectionHeading } from "./About";
+import { SectionHeading } from "./page";
 
 export default function Education() {
   return (

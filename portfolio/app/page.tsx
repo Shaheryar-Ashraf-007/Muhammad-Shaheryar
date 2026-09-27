@@ -1,6 +1,4 @@
-import Sidebar from "@/components/Sidebar";
 import HomeSection from "@/components/Home";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function Home() {

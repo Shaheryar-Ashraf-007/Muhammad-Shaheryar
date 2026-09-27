@@ -1,9 +1,9 @@
 import { experience } from "@/data/content";
-import { SectionHeading } from "./About";
+import { SectionHeading } from "./page";
 
 export default function Experience() {
   return (
-    <section id="experience" className="px-6 py-20 md:px-14">
+    <section id="experience" className="px-6 py-20 md:px-72">
       <div className="mx-auto max-w-3xl">
         <SectionHeading index="03" title="Experience" />
 

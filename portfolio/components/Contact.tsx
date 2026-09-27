@@ -1,6 +1,6 @@
 import { Github, Linkedin, Code2 } from "lucide-react";
 import { profile, status } from "@/data/content";
-import { SectionHeading } from "./About";
+import { SectionHeading } from "./page";
 
 export default function Contact() {
   return (
