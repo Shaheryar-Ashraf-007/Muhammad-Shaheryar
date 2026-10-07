@@ -35,6 +35,9 @@ const jbMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: `${profile.name} — ${profile.roles[0]}`,
   description: profile.tagline,
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
