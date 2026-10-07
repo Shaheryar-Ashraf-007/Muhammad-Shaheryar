@@ -6,6 +6,7 @@ import { profile } from "@/data/content";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import GlowingDotsBackground from "@/components/Animation";
+import Loader from "@/components/Loader";
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
@@ -47,8 +48,9 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem={false}
         >
+          <Loader />
+
           <GlowingDotsBackground>
-            {/* UI */}
             <div className="relative z-10 min-h-screen">
               <Sidebar />
 

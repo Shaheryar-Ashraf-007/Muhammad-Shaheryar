@@ -4,7 +4,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="px-6 pb-20 md:px-14 pt-8 lg:pt-24">
+    <section
+      id="about"
+      className="relative pb-16 pt-10 sm:px-6 lg:px-8 lg:pb-24 lg:pt-24"
+    >
       {/* Mobile Profile Image */}
       <div className="flex items-center justify-center lg:hidden">
         <div className="relative flex items-center justify-center">
@@ -27,9 +30,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mt-6 flex justify-center lg:hidden">
+      {/* Status */}
+      <div className="mt-7 flex justify-center lg:hidden">
         <div className="flex items-center gap-3 rounded-full border border-ink/[0.08] bg-ink/[0.03] px-5 py-2.5 font-mono text-xs shadow-sm backdrop-blur-sm dark:border-paper/[0.1] dark:bg-paper/[0.05]">
-          {/* Status */}
           <span className="flex items-center gap-2 text-ink/80 dark:text-paper/80">
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-500 opacity-60 dark:bg-teal-300" />
@@ -39,10 +42,8 @@ export default function About() {
             {status.available ? "Available" : "Unavailable"}
           </span>
 
-          {/* Divider */}
           <span className="h-4 w-px bg-ink/10 dark:bg-paper/10" />
 
-          {/* Timezone */}
           <span className="text-ink/50 dark:text-paper/50">
             {status.timezone}
           </span>
@@ -50,18 +51,20 @@ export default function About() {
       </div>
 
       {/* About Content */}
-      <div className="mx-auto max-w-3xl mt-4">
+      <div className="mx-auto mt-8 max-w-3xl lg:mt-0">
+        {/* Intro */}
         <p className="mb-4 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em] text-teal-600 dark:text-teal-300">
           <span className="text-teal-500 dark:text-teal-300">◆</span>
           {profile.roles.slice(0, 2).join(", ")} · {profile.location}
         </p>
 
+        {/* Heading */}
         <h2 className="font-display text-4xl font-semibold tracking-tight text-ink dark:text-paper md:text-5xl">
           About Me.
         </h2>
 
         {/* About Paragraphs */}
-        <div className="mt-7 space-y-5">
+        <div className="mt-6 space-y-4">
           {about.paragraphs.map((p, i) => (
             <p
               key={i}
@@ -73,58 +76,65 @@ export default function About() {
         </div>
 
         {/* Current Position */}
-        <h2 className="pt-4 font-display text-xl font-semibold tracking-tight text-ink dark:text-paper md:text-2xl">
-          Current Position.
-        </h2>
+        <div className="mt-10">
+          <h2 className="font-display text-xl font-semibold tracking-tight text-ink dark:text-paper md:text-2xl">
+            Current Position.
+          </h2>
 
-        <div className="mt-4">
-          <p className="text-base leading-relaxed text-ink/70 dark:text-paper/70 md:text-[17px]">
-            Technical Support Executive at{" "}
-            <span className="font-semibold underline">ibex.Pakistan</span>
-          </p>
+          <div className="mt-3">
+            <p className="text-base leading-relaxed text-ink/70 dark:text-paper/70 md:text-[17px]">
+              Customer Support Executive at{" "}
+              <span className="font-semibold underline">
+                ibex.Pakistan
+              </span>
+            </p>
+          </div>
         </div>
 
-        <h2 className="pt-4 font-display text-xl font-semibold tracking-tight text-ink dark:text-paper md:text-2xl">
-          Education.
-        </h2>
+        {/* Education */}
+        <div className="mt-8">
+          <h2 className="font-display text-xl font-semibold tracking-tight text-ink dark:text-paper md:text-2xl">
+            Education.
+          </h2>
 
-        <div className="mt-4">
-          <p className="text-base leading-relaxed text-ink/70 dark:text-paper/70 md:text-[17px]">
-            Bachelor of Science in Computer Science from{" "}
-            <span className="font-semibold underline">
-              Government College University Faisalabad (GCUF)
-            </span>
-          </p>
-          <h3 className="text-xl pt-4 pb-4">
-            CGPA:
-            <span className="font-semibold underline text-[17px] text-ink/70 dark:text-paper/70">
-              {" "}
-              3.32/4.00
-            </span>
-          </h3>
+          <div className="mt-3">
+            <p className="text-base leading-relaxed text-ink/70 dark:text-paper/70 md:text-[17px]">
+              Bachelor of Science in Computer Science from{" "}
+              <span className="font-semibold underline">
+                Government College University Faisalabad (GCUF)
+              </span>
+            </p>
+
+            <p className="mt-3 text-base text-ink/70 dark:text-paper/70">
+              CGPA:{" "}
+              <span className="font-semibold underline">
+                3.32/4.00
+              </span>
+            </p>
+          </div>
         </div>
 
         {/* Projects Link */}
         <a
-          href="#projects"
-          className="mt-7 inline-flex items-center gap-1.5 font-mono text-sm text-teal-600 transition-colors hover:text-teal-700 dark:text-teal-300 dark:hover:text-teal-200"
+          href="/projects"
+          className="mt-8 inline-flex items-center gap-1.5 font-mono text-sm text-teal-600 transition-colors hover:text-teal-700 dark:text-teal-300 dark:hover:text-teal-200"
         >
           See my projects
           <ArrowUpRight size={15} />
         </a>
 
         {/* Stats Bar */}
-        <div className="mt-14 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {stats.map((s, i) => (
+        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {stats.map((s) => (
             <div
               key={s.label}
-              className="group relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-paper/80 px-5 py-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-teal-400/40 hover:shadow-[0_10px_30px_rgba(20,184,166,0.08)] dark:border-paper/[0.1] dark:bg-paper/[0.03] dark:hover:border-teal-300/30"
+              className="group relative overflow-hidden rounded-2xl border border-ink/[0.08] bg-paper/80 px-4 py-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-teal-400/40 hover:shadow-[0_10px_30px_rgba(20,184,166,0.08)] dark:border-paper/[0.1] dark:bg-paper/[0.03] dark:hover:border-teal-300/30 sm:px-5 sm:py-6"
             >
               {/* Subtle teal glow */}
               <div className="absolute -right-8 -top-8 h-20 w-20 rounded-full bg-teal-400/10 blur-2xl transition-opacity duration-300 group-hover:bg-teal-400/20" />
 
-              {/* Number */}
               <div className="relative">
+                {/* Number */}
                 <p className="font-display text-3xl font-semibold tracking-tight text-ink dark:text-paper">
                   {s.value}
                   <span className="ml-1 text-teal-500 dark:text-teal-300">
