@@ -63,11 +63,7 @@ export default function Projects() {
                       aria-label={`${project.name} live site`}
                       className="rounded-full border border-transparent p-2 text-ink/50 transition-all duration-300 hover:border-teal-500/20 hover:bg-teal-500/[0.06] hover:text-teal-600 dark:text-paper/50 dark:hover:border-teal-300/20 dark:hover:bg-teal-300/[0.06] dark:hover:text-teal-300"
                     >
-                      <ArrowUpRight
-                        size={17}
-                        strokeWidth={1.7}
-                        className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      />
+                     
                     </a>
                   </div>
                 </div>
