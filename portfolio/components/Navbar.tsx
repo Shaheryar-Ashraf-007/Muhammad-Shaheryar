@@ -138,29 +138,6 @@ export default function Navbar() {
               </SocialLink>
 
               {/* Theme Switcher */}
-              {mounted && (
-                <button
-                  aria-label="Toggle theme"
-                  onClick={toggleTheme}
-                  className="
-                    rounded-full
-                    p-1.5
-                    text-ink/60
-                    transition-colors
-                    hover:bg-ink/[0.06]
-                    hover:text-ink
-                    dark:text-paper/60
-                    dark:hover:bg-paper/[0.08]
-                    dark:hover:text-paper
-                  "
-                >
-                  {theme === "dark" ? (
-                    <Sun size={15} />
-                  ) : (
-                    <Moon size={15} />
-                  )}
-                </button>
-              )}
             </div>
           </div>
         </nav>
