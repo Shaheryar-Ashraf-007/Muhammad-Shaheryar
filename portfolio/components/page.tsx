@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative pb-16 pt-10 px-4 sm:px-6 lg:pb-24 lg:pt-24"
+      className="relative pb-16 pt-10 px-4 lg:pb-24 lg:pt-24"
     >
       {/* Mobile Profile Image */}
       <div className="flex items-center justify-center lg:hidden">

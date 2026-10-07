@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Sora, Inter, JetBrains_Mono } from "next/font/google";
+
 import "./globals.css";
+
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { profile } from "@/data/content";
+
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import GlowingDotsBackground from "@/components/Animation";
 import Loader from "@/components/Loader";
+
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
@@ -41,24 +45,40 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${sora.variable} ${inter.variable} ${jbMono.variable} font-body antialiased bg-paper text-ink dark:bg-ink dark:text-paper`}
+        className={`
+          ${sora.variable}
+          ${inter.variable}
+          ${jbMono.variable}
+          font-body
+          antialiased
+          bg-paper
+          text-ink
+          dark:bg-ink
+          dark:text-paper
+        `}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
         >
+          {/* Page Loader */}
           <Loader />
 
           <GlowingDotsBackground>
             <div className="relative z-10 min-h-screen">
+              
+              {/* Sidebar */}
               <Sidebar />
 
-              <div className="hidden lg:block">
-                <Navbar />
-              </div>
+              {/* Responsive Navbar */}
+              <Navbar />
 
-              <main className="min-h-screen lg:pt-0">{children}</main>
+              {/* Main Content */}
+              <main className="min-h-screen lg:pt-0">
+                {children}
+              </main>
+
             </div>
           </GlowingDotsBackground>
         </ThemeProvider>
