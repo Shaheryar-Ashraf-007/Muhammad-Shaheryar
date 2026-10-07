@@ -52,7 +52,7 @@ export default function Navbar() {
       {/* DESKTOP NAVBAR */}
       {/* ================================================= */}
 
-      <header className="fixed left-86 right-0 top-5 z-50 hidden justify-center px-4 lg:flex">
+      <header className="fixed left-72 right-0 top-5 z-50 hidden justify-center px-4 lg:flex">
         <nav
           className="
             w-full max-w-[900px]
