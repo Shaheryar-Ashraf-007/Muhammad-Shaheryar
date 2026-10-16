@@ -114,7 +114,7 @@ export const experience = [
   {
     role: "Customer Support Executive",
     company: "Ibex. Pakistan",
-    period: "SEP 2026 — Present",
+    period: "AUG 2026 — SEP 2026",
     current: true,
     points: [
       "Provide customer support by diagnosing issues, troubleshooting problems, and guiding customers toward appropriate solutions.Apply structured problem-solving and analytical skills while handling customer queries and resolving service-related issues.Maintain accurate case records and follow established quality, compliance, and service procedures."

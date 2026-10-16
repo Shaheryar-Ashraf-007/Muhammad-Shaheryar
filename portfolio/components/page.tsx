@@ -76,7 +76,7 @@ export default function About() {
         </div>
 
         {/* Current Position */}
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <h2 className="font-display text-xl font-semibold tracking-tight text-ink dark:text-paper md:text-2xl">
             Current Position.
           </h2>
@@ -89,7 +89,7 @@ export default function About() {
               </span>
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Education */}
         <div className="mt-8">
